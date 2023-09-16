@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@500;600&display=swap");
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+body {
+  background-color: #F5F7FE;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87px;
+  border-bottom: darkBlue 1px solid;
+}
+header .header-content {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+header .header-content .header-menu {
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .header-content .header-menu a {
+  color: #727476;
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 18px;
+}
+header .header-content .header-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+}
+header .header-content .header-contacts .header-contacts-phone {
+  font-family: "Tektur";
+  font-size: 18px;
+  font-weight: 500;
+  color: #3E5D93;
+}
+header .header-content .header-cart {
+  display: flex;
+  flex-direction: row;
+}
+header .header-content .header-cart p {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  color: #3E5D93;
+}
