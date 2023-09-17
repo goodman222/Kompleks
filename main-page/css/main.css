@@ -71,3 +71,46 @@ header .header-content .header-cart p {
   font-size: 14px;
   color: #3E5D93;
 }
+header .header-content .header-cart a {
+  display: block;
+  height: 21px;
+  width: 40px;
+  position: absolute;
+}
+
+.text-1 {
+  margin-top: 35px;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+}
+.text-1 h1 {
+  font-family: "Tektur";
+  font-size: 54px;
+  font-weight: 600;
+  color: #727476;
+}
+.text-1 h1 span {
+  color: #3E5D93;
+}
+.text-1 p {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  color: #727476;
+  width: 556px;
+  align-self: flex-end;
+}
+
+.main-category {
+  margin-top: 35px;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1920px;
+  height: 545px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/../img/block-2.png");
+}

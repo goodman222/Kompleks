@@ -63,9 +63,54 @@ header {
                 font-size: 14px;
                 color: $darkBlue;
             }
+
+            a {
+                display: block; 
+                height: 21px;
+                width: 40px;
+                position: absolute;
+            }
         }
 
     }
 
 }
 
+.text-1 {
+    margin-top: 35px;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    
+    h1 {
+        font-family: 'Tektur';
+        font-size: 54px;
+        font-weight: 600;
+        color: $darkGrey;
+        span {
+            color: $darkBlue;
+        }
+    }
+
+    p {
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: 400;
+        color: $darkGrey;
+        width: 556px;
+        align-self: flex-end;
+    }
+}
+
+.main-category {
+    margin-top: 35px;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1920px;
+    height: 545px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/../img/block-2.png");
+}
