@@ -83,6 +83,7 @@ header .header-content .header-cart a {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 .text-1 {
@@ -113,7 +114,6 @@ header .header-content .header-cart a {
   background-clip: content-box;
   margin-top: 35px;
   width: 100%;
-  max-width: 1920px;
   height: 545px;
   display: flex;
   flex-direction: column;
@@ -211,4 +211,357 @@ header .header-content .header-cart a {
   align-self: end;
   position: relative;
   right: 29px;
+}
+
+.main-technology {
+  width: 100%;
+  margin-top: 125px;
+  display: grid;
+  grid-template-columns: auto 62.5%;
+}
+.main-technology .main-technology-header {
+  height: 19px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-technology .main-technology-header .main-bracket {
+  width: 9px;
+  height: 19px;
+  border: 2px solid #727476;
+  border-right: none;
+  margin-right: 12px;
+}
+.main-technology .main-technology-header .main-line {
+  width: 100%;
+  height: 0;
+  border-top: 2px solid #3E5D93;
+  margin-right: 20px;
+}
+.main-technology .main-technology-header p {
+  min-width: 110px;
+  margin-right: 8px;
+  font-family: Tektur;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3E5D93;
+}
+.main-technology .main-technology-content h2 {
+  font-family: Tektur;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 2.16px;
+  color: #727476;
+}
+.main-technology .main-technology-content h2 span {
+  color: #3E5D93;
+}
+.main-technology .main-technology-content p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727476;
+}
+
+.main-tiles {
+  width: 100%;
+  display: grid;
+  margin-top: 40px;
+  grid-template-areas: "A A B B C C" "D E E F F G";
+  gap: 8px;
+  grid-template-rows: 320px;
+}
+.main-tiles .t-A {
+  grid-area: A;
+}
+.main-tiles .t-B {
+  grid-area: B;
+}
+.main-tiles .t-C {
+  grid-area: C;
+}
+.main-tiles .t-D {
+  grid-area: D;
+}
+.main-tiles .t-E {
+  grid-area: E;
+}
+.main-tiles .t-F {
+  grid-area: F;
+}
+.main-tiles .t-G {
+  grid-area: G;
+}
+.main-tiles .main-tile {
+  border-radius: 30px;
+  background: var(--secondary-bg-gradient, linear-gradient(92deg, rgba(13, 135, 248, 0.15) 1.39%, rgba(124, 231, 255, 0.25) 45.35%, rgba(143, 201, 254, 0.45) 89.31%));
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-tiles .main-tile h3 {
+  font-family: Tektur;
+  font-size: 62px;
+  font-weight: 600;
+  color: #3E5D93;
+}
+.main-tiles .main-tile p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727476;
+}
+.main-tiles .main-tile-pic {
+  border-radius: 30px;
+}
+.main-tiles .main-tile-pic img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.main-partners {
+  width: 100%;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-partners .main-partners-text {
+  max-width: 470px;
+}
+.main-partners .main-partners-text h2 {
+  font-family: Tektur;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 2.16px;
+  color: #727476;
+}
+.main-partners .main-partners-text h2 span {
+  color: #3E5D93;
+}
+.main-partners .main-partners-text p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727476;
+}
+.main-partners .main-partners-ticker {
+  overflow: hidden;
+  width: 60%;
+  height: 100px;
+}
+.main-partners .main-partners-ticker > div {
+  width: 200%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  animation: ticker 8s linear infinite;
+}
+.main-partners .main-partners-ticker .main-ticker-element {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.main-partners .main-partners-ticker .main-ticker-element img {
+  width: 25%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main-products {
+  width: 100%;
+  margin-top: 125px;
+  display: grid;
+  grid-template-columns: auto 50%;
+}
+.main-products .main-products-header {
+  height: 19px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-products .main-products-header .main-bracket {
+  width: 9px;
+  height: 19px;
+  border: 2px solid #727476;
+  border-right: none;
+  margin-right: 12px;
+}
+.main-products .main-products-header .main-line {
+  width: 100%;
+  height: 0;
+  border-top: 2px solid #3E5D93;
+  margin-right: 20px;
+}
+.main-products .main-products-header p {
+  min-width: 155px;
+  margin-right: 8px;
+  font-family: Tektur;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3E5D93;
+}
+.main-products .main-products-content h2 {
+  font-family: Tektur;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 2.16px;
+  color: #727476;
+}
+.main-products .main-products-content h2 span {
+  color: #3E5D93;
+}
+.main-products .main-products-content p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727476;
+  margin-bottom: 20px;
+}
+.main-products .main-products-content .main-products-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 52px;
+}
+
+.main-showcase {
+  width: 100%;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: auto 1015px;
+  gap: 25px;
+}
+.main-showcase .main-showcase-link {
+  display: grid;
+  grid-template-columns: 60px auto 125px;
+  gap: 15px;
+  align-content: end;
+  align-items: center;
+}
+.main-showcase .main-showcase-link .main-showcase-arrow {
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-showcase .main-showcase-link .main-showcase-arrow a {
+  display: block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+}
+.main-showcase .main-showcase-link .main-showcase-line {
+  height: 0px;
+  border-top: 2px solid #3E5D93;
+}
+.main-showcase .main-showcase-link a {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727476;
+}
+.main-showcase .main-showcase-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-product-card {
+  width: 325px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-product-card .product-card-img {
+  background-color: #FFFFFF;
+  width: 325px;
+  height: 325px;
+  border-radius: 30px;
+}
+.main-product-card .product-card-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main-product-card .product-card-articul {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  color: #727476;
+}
+.main-product-card .product-card-name {
+  font-family: Tektur;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3E5D93;
+}
+.main-product-card .product-card-string {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-product-card .product-card-string .product-card-price {
+  font-family: Tektur;
+  font-size: 18px;
+  font-weight: 500;
+  color: #727476;
+}
+.main-product-card .product-card-string .product-card-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 116px;
+  height: 30px;
+}
+.main-product-card .product-card-string .product-card-link a {
+  display: block;
+  height: 30px;
+  width: 116px;
+  position: absolute;
+}
+.main-product-card .product-card-string .product-card-link p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3E5D93;
+}
+.main-product-card .product-card-string .product-card-link .product-card-arrow {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-product-card .product-card-string .product-card-link .product-card-arrow img {
+  width: 10px;
+  height: 10px;
 }
