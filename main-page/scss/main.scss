@@ -652,3 +652,233 @@ header {
         }
     }
 }
+
+
+.main-advantages {
+    width: 100%;
+    margin-top: 125px;
+    display: grid;
+    grid-template-columns: auto 50%;
+
+    .main-advantages-header {
+
+        height: 19px;
+        flex-grow: 1;
+        // width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .main-bracket {
+            width: 9px;
+            height: 19px;
+            border: 2px solid $darkGrey;
+            border-right: none;
+            margin-right: 12px;
+        }
+
+        .main-line {
+            width: 100%;
+            height: 0;
+            border-top: 2px solid $darkBlue;
+            margin-right: 20px;
+        }
+        
+        p {
+            min-width: 208px;
+            margin-right: 8px;
+            font-family: Tektur;
+            font-size: 18px;
+            font-weight: 500;
+            color: $darkBlue;
+        }
+    }
+
+    .main-advantages-content {
+        
+        
+        h2 {
+            font-family: Tektur;
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: 2.16px;
+            color: $darkGrey;
+
+            span {
+                color: $darkBlue;
+            }
+        }
+    }
+}
+
+.main-tiles-adv {
+    width: 100%;
+    display: grid;
+    margin-top: 40px;
+    grid-template-areas: 
+        "A B B"
+        "C C D"
+    ;
+    gap: 8px;
+    grid-template-rows: 304px 220px;
+
+    .adv-A {
+        grid-area: A;
+    }
+
+    .adv-B {
+        grid-area: B;
+    }
+
+    .adv-C {
+        grid-area: C;
+    }
+
+    .adv-D {
+        grid-area: D;
+    }
+
+
+    .main-tile-adv {
+        @include tile;
+    }
+
+    .main-tile-cert {
+        @include tile;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .cert-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 360px;
+        }
+
+        .cert-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .cert-img {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                img {
+                    margin-right: 8px;
+                }
+            }
+
+            .cert-selecters {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 30px;
+
+                .cert-selecter {
+                    width: 6px;
+                    height: 6px;
+                    background-color: $darkGrey;
+                    border-radius: 3px;
+                }
+
+                .cert-selecter-active {
+                    background-color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .main-tile-pic {
+        @include tilePic;
+    }
+}
+
+
+.main-examples {
+    width: 100%;
+    height: 440px;
+    margin-top: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .main-examples-text {
+        // width: 440px;
+        width: 31%;
+
+        .main-examples-header {
+
+            height: 19px;
+            flex-grow: 1;
+            // width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .main-bracket {
+                width: 9px;
+                height: 19px;
+                border: 2px solid $darkGrey;
+                border-right: none;
+                margin-right: 12px;
+            }
+
+            .main-line {
+                width: 100%;
+                height: 0;
+                border-top: 2px solid $darkBlue;
+                margin-right: 20px;
+            }
+            
+            p {
+                min-width: 155px;
+                margin-right: 8px;
+                font-family: Tektur;
+                font-size: 18px;
+                font-weight: 500;
+                color: $darkBlue;
+            }
+        }
+
+        h3 {
+            font-family: Tektur;
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: 2.16px;
+            color: $darkGrey;
+            margin-top: 20px;
+
+            span {
+                color: $darkBlue;
+            }
+        }
+    }
+
+    .main-examples-content {
+        background-image: url('/../img/example.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        width: 68%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .examples-arrows {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 55px;
+        }
+    }
+
+}
+
+
+.hidden {
+    display: none;
+}
