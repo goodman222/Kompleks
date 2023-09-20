@@ -838,12 +838,13 @@ header .header-content .header-cart a {
   font-weight: 500;
   color: #3E5D93;
 }
-.main-form-container .main-form .main-form-content form {
+
+.main-form form {
   margin-top: 35px;
   display: flex;
   flex-direction: column;
 }
-.main-form-container .main-form .main-form-content form input {
+.main-form form input {
   border-bottom: 1px solid #727476;
   height: 45px;
   font-family: Lato;
@@ -851,13 +852,13 @@ header .header-content .header-cart a {
   font-weight: 400;
   color: #727476;
 }
-.main-form-container .main-form .main-form-content form > div {
+.main-form form > div {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 30px;
 }
-.main-form-container .main-form .main-form-content form > div input[type=submit] {
+.main-form form > div input[type=submit] {
   font-family: Lato;
   font-size: 16px;
   font-weight: 600;
@@ -867,7 +868,7 @@ header .header-content .header-cart a {
   width: fit-content;
   margin-right: 5px;
 }
-.main-form-container .main-form .main-form-content form > div .form-arrow {
+.main-form form > div .form-arrow {
   background-color: #FFFFFF;
   width: 24px;
   min-width: 24px;
@@ -877,16 +878,128 @@ header .header-content .header-cart a {
   justify-content: center;
   align-items: center;
 }
-.main-form-container .main-form .main-form-content form > div .form-arrow img {
+.main-form form > div .form-arrow img {
   width: 10px;
   height: 10px;
 }
-.main-form-container .main-form .main-form-content form > div p {
+.main-form form > div p {
   font-family: Lato;
   font-size: 12px;
   font-weight: 400;
   color: #727476;
   margin-left: 10px;
+}
+
+.main-contact {
+  width: 100%;
+  margin-top: 80px;
+}
+.main-contact .main-contact-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-contact .main-contact-header h3 {
+  font-family: Tektur;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 2.16px;
+  color: #727476;
+}
+.main-contact .main-contact-header h3 span {
+  color: #3E5D93;
+}
+.main-contact .main-contact-header .main-contact-line {
+  height: 19px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-contact .main-contact-header .main-contact-line .main-bracket {
+  width: 9px;
+  height: 19px;
+  border: 2px solid #727476;
+  border-right: none;
+  margin-right: 12px;
+}
+.main-contact .main-contact-header .main-contact-line .main-line {
+  width: 100%;
+  height: 0;
+  border-top: 2px solid #3E5D93;
+  margin-right: 20px;
+}
+.main-contact .main-contact-header .main-contact-line p {
+  min-width: 155px;
+  margin-right: 8px;
+  font-family: Tektur;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3E5D93;
+}
+.main-contact .contact-blocks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-contact .contact-blocks .grad-block {
+  background: var(--secondary-bg-gradient, linear-gradient(92deg, rgba(13, 135, 248, 0.15) 1.39%, rgba(124, 231, 255, 0.25) 45.35%, rgba(143, 201, 254, 0.45) 89.31%));
+}
+.main-contact .contact-blocks .white-block {
+  background-color: #FFFFFF;
+  margin: 0 !important;
+}
+.main-contact .contact-blocks .contact-block {
+  width: 327px;
+  height: 177px;
+  padding: 20px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.main-contact .contact-blocks .contact-block .contact-block-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-contact .contact-blocks .contact-block .contact-block-header .contact-arrow {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.main-contact .contact-blocks .contact-block .contact-link {
+  margin-top: 12px;
+}
+.main-contact .contact-blocks .contact-block .contact-link a {
+  margin-right: 20px;
+}
+.main-contact .contact-blocks .contact-block p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727476;
+  margin-top: 12px;
+}
+.main-contact .contact-blocks .contact-block p > :first-child {
+  margin-top: 20px;
+}
+.main-contact .contact-blocks .contact-block h1 {
+  font-family: Tektur;
+  font-size: 24px;
+  font-weight: 500;
+  color: #3E5D93;
+}
+
+footer {
+  margin-top: 80px;
+  background-color: #3E5D93;
+  width: 100%;
+  height: 111px;
 }
 
 .hidden {
