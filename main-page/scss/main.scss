@@ -879,6 +879,128 @@ header {
 }
 
 
+.main-form-container {
+    width: 100%;
+    // height: 100px;
+    background: var(--secondary-bg-gradient, linear-gradient(92deg, rgba(13, 135, 248, 0.15) 1.39%, rgba(124, 231, 255, 0.25) 45.35%, rgba(143, 201, 254, 0.45) 89.31%));
+    padding: 80px 20px 90px 20px;
+    margin-top: 85px;
+
+    .main-form {
+        margin: 0 auto;
+        max-width: 1920px;
+        display: flex;
+        flex-direction: row;
+
+        .main-form-header {
+            width: 49%;
+            margin-right: 40px;
+
+            p {
+                width: 412px;
+                font-family: Tektur;
+                font-size: 48px;
+                font-weight: 600;
+                letter-spacing: 2.16px;
+                color: $darkGrey;
+
+                span {
+                    color: $darkBlue;
+                }
+            }
+        }
+
+        .main-form-content {
+            width: 49%;
+            
+            .main-form-title {
+
+                height: 19px;
+                flex-grow: 1;
+                // width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+    
+                .main-bracket {
+                    width: 9px;
+                    height: 19px;
+                    border: 2px solid $darkGrey;
+                    border-right: none;
+                    margin-right: 12px;
+                }
+                  
+                p {
+                    min-width: 155px;
+                    margin-right: 8px;
+                    font-family: Tektur;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $darkBlue;
+                }
+            }
+
+            form {
+                margin-top: 35px;
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    border-bottom: 1px solid $darkGrey;
+                    height: 45px;
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $darkGrey;
+                }
+                
+                > div {
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 30px;
+                    
+                    input[type="submit"] {
+                        font-family: Lato;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $darkBlue;
+                        border: none;
+                        width:fit-content;
+                        margin-right: 5px;
+                    }
+
+                    .form-arrow {
+                        background-color: #FFFFFF;
+                        width: 24px;
+                        min-width: 24px;
+                        height: 24px;
+                        border-radius: 12px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // margin-right: 10px;
+                        
+                        img {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+
+                    p {
+                        font-family: Lato;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $darkGrey;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .hidden {
     display: none;
 }

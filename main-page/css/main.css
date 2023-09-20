@@ -786,6 +786,109 @@ header .header-content .header-cart a {
   width: 55px;
 }
 
+.main-form-container {
+  width: 100%;
+  background: var(--secondary-bg-gradient, linear-gradient(92deg, rgba(13, 135, 248, 0.15) 1.39%, rgba(124, 231, 255, 0.25) 45.35%, rgba(143, 201, 254, 0.45) 89.31%));
+  padding: 80px 20px 90px 20px;
+  margin-top: 85px;
+}
+.main-form-container .main-form {
+  margin: 0 auto;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: row;
+}
+.main-form-container .main-form .main-form-header {
+  width: 49%;
+  margin-right: 40px;
+}
+.main-form-container .main-form .main-form-header p {
+  width: 412px;
+  font-family: Tektur;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 2.16px;
+  color: #727476;
+}
+.main-form-container .main-form .main-form-header p span {
+  color: #3E5D93;
+}
+.main-form-container .main-form .main-form-content {
+  width: 49%;
+}
+.main-form-container .main-form .main-form-content .main-form-title {
+  height: 19px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-form-container .main-form .main-form-content .main-form-title .main-bracket {
+  width: 9px;
+  height: 19px;
+  border: 2px solid #727476;
+  border-right: none;
+  margin-right: 12px;
+}
+.main-form-container .main-form .main-form-content .main-form-title p {
+  min-width: 155px;
+  margin-right: 8px;
+  font-family: Tektur;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3E5D93;
+}
+.main-form-container .main-form .main-form-content form {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.main-form-container .main-form .main-form-content form input {
+  border-bottom: 1px solid #727476;
+  height: 45px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727476;
+}
+.main-form-container .main-form .main-form-content form > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}
+.main-form-container .main-form .main-form-content form > div input[type=submit] {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3E5D93;
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 5px;
+}
+.main-form-container .main-form .main-form-content form > div .form-arrow {
+  background-color: #FFFFFF;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-form-container .main-form .main-form-content form > div .form-arrow img {
+  width: 10px;
+  height: 10px;
+}
+.main-form-container .main-form .main-form-content form > div p {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  color: #727476;
+  margin-left: 10px;
+}
+
 .hidden {
   display: none;
 }
