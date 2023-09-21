@@ -5,14 +5,27 @@
     <title>Комплексные решения</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
 </head>
 <body>
 
 
 
     <header id="top">
-
+        
        <div class="header-content">
+
+            <div class="header-buttons">
+                <div class="header-menu-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="header-search">
+                    <img src="../img/search.png" alt="">
+                </div>
+            </div>
+
            <div class="header-logo">
                 <a href="">
                      <img src="../img/Logo.png" alt="">
@@ -69,6 +82,10 @@
                 <div class="angle a2"></div>
             </div>
 
+            <div class="main-category-pic">
+                <img src="../img/block-2-mob.png" alt="">
+            </div>
+
             <div class="main-category-container link-2">
 
                 <div class="main-category-link">
@@ -94,7 +111,7 @@
             </div>
 
             <div class="main-technology-content">
-                <h2>Компания в работе <span>использует</span><br> современные <span>технологии</span><br>
+                <h2>Компания в работе <span>использует</span> современные <span>технологии</span>
                     и точное <span>оборудование</span> </h2>
                 <p>Главным для нас является безопасность и надежность конструкции, поэтому наши полигоны после разработки проходили обязательную тестовую сборку и доработку.<br><br>
                     Все тренировочные полигоны выполнены в соответствии с требованиями приказов Министерства труда и социальной защиты. (От 16.11.2020 № 782н "Об утверждении Правил по охране труда при работе на высоте". От 15.12.2020 № 902н "Об утверждении Правил по охране труда при работе в ограниченных и замкнутых пространствах").</p>
@@ -114,11 +131,13 @@
             </div>
 
             <div class="main-tile-pic t-C">
-                <img src="../img/tile-1.png" alt="">
+                <img class="pic-desktop" src="../img/tile-1.png" alt="">
+                <img class="pic-mob" src="../img/tile-1-mob.png" alt="">
             </div>
             
             <div class="main-tile-pic t-D">
-                <img src="../img/tile-2.png" alt="">
+                <img class="pic-desktop" src="../img/tile-2.png" alt="">
+                <img class="pic-mob" src="../img/tile-2-mob.png" alt="">
             </div>
 
             <div class="main-tile t-E">
@@ -175,12 +194,23 @@
                 <h2>Учебно-тренировочные <span>стенды</span></h2>
                 <p>Предназначены для проведения обучения и отработки навыков выполнения работ на высоте, в ограниченных и замкнутых пространствах в учебных центрах и для прохождения аттестации</p>
                 
-                <div class="main-products-arrows">
-                    <div class="main-products-arrow">
-                        <img src="../img/arrow-left.svg" alt="">
+                <div class="main-product-buttons">
+                    <div class="main-products-arrows">
+                        <div class="main-products-arrow">
+                            <img src="../img/arrow-left.svg" alt="">
+                        </div>
+                        <div class="main-products-arrow">
+                            <img src="../img/arrow-right.svg" alt="">
+                        </div>
                     </div>
-                    <div class="main-products-arrow">
-                        <img src="../img/arrow-right.svg" alt="">
+
+                    <div class="main-mob-link">
+                        <div class="main-mob-arrow">
+                            <a href=""></a>
+                            <img src="../img/Arrow.svg" alt="">
+                        </div>
+                        <div class="main-mob-line"></div>
+                        <a href="">Смотреть все стенды</a>
                     </div>
                 </div>
 
@@ -322,12 +352,23 @@
                 <h2>Учебно-тренировочные <span>полигоны</span></h2>
                 <p>Предназначены для проведения обучения и тренировки безопасным методам и приемам выполнения работ на высоте работников промышленных предприятий</p>
                 
-                <div class="main-products-arrows">
-                    <div class="main-products-arrow">
-                        <img src="../img/arrow-left.svg" alt="">
+                <div class="main-product-buttons">
+                    <div class="main-products-arrows">
+                        <div class="main-products-arrow">
+                            <img src="../img/arrow-left.svg" alt="">
+                        </div>
+                        <div class="main-products-arrow">
+                            <img src="../img/arrow-right.svg" alt="">
+                        </div>
                     </div>
-                    <div class="main-products-arrow">
-                        <img src="../img/arrow-right.svg" alt="">
+
+                    <div class="main-mob-link">
+                        <div class="main-mob-arrow">
+                            <a href=""></a>
+                            <img src="../img/Arrow.svg" alt="">
+                        </div>
+                        <div class="main-mob-line"></div>
+                        <a href="">Смотреть все полигоны</a>
                     </div>
                 </div>
 
@@ -410,7 +451,7 @@
                     <p>Наши работы</p>
                     <div class="main-line"></div>
                 </div> 
-                <h3>Установленные нами <span>полигоны</span> и <span>стенды</span></h3>
+                <h2>Установленные нами <span>полигоны</span> и <span>стенды</span></h2>
             </div>
 
             <div class="main-examples-content">
@@ -447,9 +488,11 @@
                     <input type="text" placeholder="Город">
                     <input type="text" placeholder="Комментарий">
                     <div>
-                        <input type="submit">
-                        <div class="form-arrow">
-                            <img src="../img/Arrow.png" alt="">
+                        <div class="submit-button">
+                            <input type="submit">
+                            <div class="form-arrow">
+                                <img src="../img/Arrow.png" alt="">
+                            </div>
                         </div>
                         <p>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных и политикой конфиденциальности</p>
                     </div>
@@ -467,7 +510,7 @@
                     <p>Контакты</p>
                     <div class="main-line"></div>
                 </div> 
-                <h3><span>Связаться с нами -</span> просто</h3>
+                <h2><span>Связаться с нами -</span> просто</h2>
             </div>
 
             <div class="contact-blocks">
@@ -508,6 +551,7 @@
     <footer>
         <div class="footer-top">
             <img src="../img/footer-logo.png" alt="">
+            <div class="footer-line-mob"></div>
             <div class="footer-menu">
                 <a href="">[ Катaлог ]</a>
                 <a href="">[ Полезное ]</a>
@@ -520,9 +564,15 @@
                 <a href=""><img src="../img/wa-footer.svg" alt=""></a>
                 <p>8 800 300 06 62</p>
             </div>
-            <div class="footer-arrow">
-                <img src="../img/footer-arrow.svg" alt="">
-                <a href="#top"></a>
+            <div class="footer-mob-string">
+                <div class="footer-bottom-mob">
+                    <p>2023 “Комплексные решения для учебных центров”</p>
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+                <div class="footer-arrow">
+                    <img src="../img/footer-arrow.svg" alt="">
+                    <a href="#top"></a>
+                </div>
             </div>
         </div>
         <div class="footer-line">

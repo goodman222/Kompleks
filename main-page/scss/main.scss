@@ -6,6 +6,9 @@ body {
     background-color: $bgColor;
 }
 
+.pic-mob {
+    display: none;
+}
 
 header {
     display: flex;
@@ -24,6 +27,9 @@ header {
         align-items: center;
         padding: 0 20px;
 
+        .header-menu-button, .header-search, .header-buttons {
+            display: none;
+        }
 
         .header-menu {
             width: 360px;
@@ -131,6 +137,10 @@ header {
     > :last-child {
         align-self: flex-end;
         padding: 23px 0 0 23px;
+    }
+
+    .main-category-pic {
+        display: none;
     }
 
     .main-category-container {
@@ -499,11 +509,17 @@ header {
             margin-bottom: 20px;
         }
 
-        .main-products-arrows {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 52px;
+        .main-product-buttons {
+            .main-mob-link {
+                display: none;
+            }
+
+            .main-products-arrows {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 52px;
+            }
         }
     }
 }
@@ -845,7 +861,7 @@ header {
             }
         }
 
-        h3 {
+        h2 {
             font-family: Tektur;
             font-size: 48px;
             font-weight: 600;
@@ -863,6 +879,7 @@ header {
         background-image: url('/../img/example.png');
         background-repeat: no-repeat;
         background-position: right;
+        background-size: contain;
         width: 68%;
         display: flex;
         justify-content: flex-end;
@@ -1002,6 +1019,12 @@ header {
                 margin-left: 10px;
             }
         }
+        .submit-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        }
     }
 }
 
@@ -1014,7 +1037,7 @@ header {
         display: flex;
         flex-direction: row;
         align-items: center;
-        h3 {
+        h2 {
             font-family: Tektur;
             font-size: 48px;
             font-weight: 600;
@@ -1144,6 +1167,10 @@ footer {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+
+        .footer-bottom-mob {
+            display: none;
+        }
 
         .footer-menu {
 
