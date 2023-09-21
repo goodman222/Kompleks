@@ -6,22 +6,23 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/adaptive.css">
+    <script src="./script/script.js" defer></script>
 </head>
 <body>
 
 
 
-    <header id="top">
+    <header class="" id="top">
         
        <div class="header-content">
 
             <div class="header-buttons">
-                <div class="header-menu-button">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="header-menu-button" id="menuBtn">
+                    <div class="l1"></div>
+                    <div class="l2"></div>
+                    <div class="l3"></div>
                 </div>
-                <div class="header-search">
+                <div class="header-search" id="searchIcon">
                     <img src="../img/search.png" alt="">
                 </div>
             </div>
@@ -59,6 +60,35 @@
        </div>
     </header>
 
+    <div class="open-menu-container hidden" id="mobileMenu">
+        <div class="open-menu">
+            <div class="menu-container">
+                <a href="">[ Катaлог ]</a>
+                <a href="">[ Полезное ]</a>
+                <a href="">[ Услуги ]</a>
+            </div>
+            <div class="menu-container">
+                <p>8 800 300 06 62</p>
+                <div class="open-menu-links">
+                    <a href=""><img src="../img/vkicon.png" alt=""></a>
+                    <a href=""><img src="../img/yticon.png" alt=""></a>
+                    <a href=""><img src="../img/tgIcon.png" alt=""></a>
+                    <a href=""><img src="../img/waIcon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="open-search-container hidden" id="searchField"> 
+        <div class="open-search">
+            <div class="input-container">
+                <img src="../img/searchGrey.svg" alt="">
+                <input type="text" placeholder="Поиск">
+            </div>
+        </div>
+    </div>
 
     <div class="content-container">
         <div class="text-1">
@@ -330,7 +360,7 @@
             </div>
 
             <div class="main-tile-pic adv-C">
-                <img src="../img/adv-1.png" alt="">
+                <img src="../img/tile-1-mob.png" alt="">
             </div>
 
             <div class="main-tile-adv adv-D">

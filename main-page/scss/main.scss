@@ -1,6 +1,13 @@
 @import "_variable";
 @import "_font";
 
+.hidden {
+    display: none!important;
+}
+
+.noScroll {
+    overflow: hidden;
+}
 
 body {
     background-color: $bgColor;
@@ -10,6 +17,25 @@ body {
     display: none;
 }
 
+.menu-is-open {
+    .header-menu-button {
+        height: 15px!important;
+
+        .l2 {
+            display: none;
+        }
+
+        .l1 { 
+            rotate: 45deg;
+            transform-origin: left;
+        }
+
+        .l3 {
+            rotate: -45deg;
+            transform-origin: left;
+        }
+    }
+}
 header {
     display: flex;
     justify-content: center;
@@ -81,6 +107,10 @@ header {
 
     }
 
+}
+
+.open-menu-container, .open-search-container {
+    display: none;
 }
 
 
@@ -592,6 +622,9 @@ header {
         width: 325px;
         height: 325px;
         border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img {
             object-fit: contain;
