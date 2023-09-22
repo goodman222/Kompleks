@@ -1,15 +1,9 @@
 // Breakpoints: 1280px, 960px, 375px
 @import "_variable";
 @media (min-width: 960px) and (max-width: 1279px) {
-    .main-showcase {
-        grid-template-columns: auto 686px;
-        
-        .main-showcase-products > :last-child{
-            display: none;
-        }
-    }  
-
+    
     .text-1 {
+
         h1 {
             font-size: 50px;
         }
@@ -21,28 +15,6 @@
 
     h3 {
         font-size: 45px!important;
-    }
-
-    .main-tiles {
-        grid-template-rows: 280px;
-
-        .main-tile {
-            padding: 30px!important;
-        }
-    }
-
-    .main-tiles-adv {
-        grid-template-areas:
-        "A"
-        "B"
-        "C"
-        "D";
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-
-        .cert-selecters {
-            margin-top: 10px!important;
-        }
     }
 
     .footer-menu {
@@ -120,14 +92,6 @@
         
     }
 
-    .pic-mob {
-        display: block;
-    }
-
-    .pic-desktop {
-        display: none;
-    }
-
     header {
 
         .header-buttons {
@@ -158,194 +122,9 @@
         }
     }
 
-    .text-1 {
-        p {
-            width: 100%;
-        }
-    }
-
-    .main-category {
-        background-image: none;
-        flex-direction: column;
-        height: auto;
-        
-        .main-category-container {
-            display: block;
-            width: 100%;
-            
-            .main-category-link {
-                width: 100%;
-
-                a {
-                    width: 95%;
-                }
-            }
-
-        }
-
-        .main-category-pic {
-            display: block;
-            width: 100%;
-            height: 35vw;
-            margin: 20px 0;
-            
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .angle{
-            display: none!important;
-        }
-    }
-
-    .main-technology {
-        grid-template-columns: 100%;
-        gap: 23px;
-    }
-
-    .main-tiles {
-        grid-template-areas:
-        "A"
-        "B"
-        "C"
-        "E"
-        "F"
-        "G"
-        "D";
-
-        grid-template-rows: auto;
-        
-        .main-tile-pic {
-            max-height: 400px;
-
-            img {
-                object-fit: cover;
-            }
-        }
-        .main-tile {
-            padding: 30px!important;
-        }
-    }
-
-    .main-partners {
-        flex-direction: column;
-        align-items: stretch;
-
-        .main-partners-text {
-            max-width: 100%;
-        }
-
-        .main-partners-ticker {
-            width: 100%;
-            margin-top: 25px;
-        }
-    }
-
-    .main-products {
-        grid-template-columns: auto;
-        gap: 20px;
-
-        .main-product-buttons {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-
-            .main-mob-link {
-                display: flex!important;
-                flex-direction: row;
-                align-items: center;
-
-                .main-mob-line {
-                    width: 50px;
-                    height: 0px;
-                    border-bottom: 2px solid $darkBlue;
-                    margin: 0 10px;
-                }
-
-                .main-mob-arrow {
-                    width: 36px;
-                    height: 36px;
-                    border-radius: 18px;
-                    background-color: #FFFFFF;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    img {
-                        width: 16px;
-                        height: 16px;
-                    }
-                }
-
-                a {
-                    font-family: Lato;
-                    font-size: 12px;
-                    font-weight: 400;
-                    color: $darkGrey;
-                }
-            }
-        }
-    }
-
-    .main-showcase {
-        grid-template-columns: auto;
+   
 
     
-        .main-showcase-products {
-            justify-content: center;
-
-            .main-product-card {
-                  display: none;
-            }
-        }
-        
-
-        .main-showcase-products > :first-child {
-            display: flex;
-        }
-        .main-showcase-link {
-            display: none;
-        }
-
-    }
-
-    .main-advantages {
-        grid-template-columns: 100%;
-        gap: 23px;
-    }
-
-
-    .main-tiles-adv {
-        grid-template-areas:
-        "A"
-        "B"
-        "C"
-        "D";
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-
-        .main-tile-cert {
-            flex-direction: column;
-            
-            .cert-text {
-                width: 100%;
-                margin-bottom: 40px;
-            }
-
-            .cert-img {
-                justify-content: center!important;
-            }
-
-            .cert-selecters {
-                margin-top: 10px!important;
-            }
-        }
-
-        
-    }
-
     .main-examples {
         margin-top: 80px;
         flex-direction: column;
@@ -395,32 +174,6 @@
         }
 
         
-    }
-
-    .main-contact {
-        .main-contact-header {
-            flex-direction: column;
-            align-items: flex-start;
-
-            .main-contact-line {
-                width: 100%;
-                margin-bottom: 20px;
-
-                p {
-                    min-width: auto;
-                    margin-right: 10px;
-                }
-            }
-        }
-
-        .contact-blocks {
-            flex-direction: column;
-            align-items: flex-start;
-            
-            .contact-block {
-                margin-bottom: 20px;
-            }
-        }
     }
 
     footer {
@@ -524,36 +277,7 @@
         display: none;
     }
 
-    .main-category-arrow  {
-        display: none!important;
-    }
-
-    .main-product-card {
-        width: 100%;
-
-        .product-card-img {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
     h3 {
        font-size: 30px!important; 
-    }
-
-    .main-contact {
-        .contact-blocks {
-            .contact-block {
-                width: auto;
-                height: auto;
-            }
-    
-        }
-    }
-
-    .cert-img {
-        flex-direction: column!important;
     }
 }

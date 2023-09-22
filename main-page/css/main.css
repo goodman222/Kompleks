@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Tektur:wght@500;600&display=swap");
 @font-face {
   font-family: "Lato";
-  src: url("/fonts/Lato-Medium.ttf") format("truetype");
+  src: url("../../fonts/Lato-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Lato";
-  src: url("/fonts/Lato-Regular.ttf") format("truetype");
+  src: url("../../fonts/Lato-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Lato";
-  src: url("/fonts/Lato-SemiBold.ttf") format("truetype");
+  src: url("../../fonts/Lato-SemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
 }
@@ -151,7 +151,7 @@ header .header-content .header-cart a {
   height: 545px;
   display: flex;
   flex-direction: column;
-  background-image: url("/../img/block-2.png");
+  background-image: url("../../img/block-2.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
@@ -814,7 +814,7 @@ header .header-content .header-cart a {
   color: #3E5D93;
 }
 .main-examples .main-examples-content {
-  background-image: url("/../img/example.png");
+  background-image: url("../../img/example.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;

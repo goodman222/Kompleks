@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@500;600&display=swap");
+@font-face {
+  font-family: "Lato";
+  src: url("../../fonts/Lato-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../../fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../../fonts/Lato-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+.hidden {
+  display: none !important;
+}
+
+.noScroll {
+  overflow: hidden;
+}
+
+body {
+  background-color: #F5F7FE;
+}
+
+.pic-mob {
+  display: none;
+}
+
+.menu-is-open .header-menu-button {
+  height: 15px !important;
+}
+.menu-is-open .header-menu-button .l2 {
+  display: none;
+}
+.menu-is-open .header-menu-button .l1 {
+  rotate: 45deg;
+  transform-origin: left;
+}
+.menu-is-open .header-menu-button .l3 {
+  rotate: -45deg;
+  transform-origin: left;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87px;
+  border-bottom: darkBlue 1px solid;
+}
+header .header-content {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+header .header-content .header-menu-button, header .header-content .header-search, header .header-content .header-buttons {
+  display: none;
+}
+header .header-content .header-menu {
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .header-content .header-menu a {
+  color: #727476;
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 18px;
+}
+header .header-content .header-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+}
+header .header-content .header-contacts .header-contacts-phone {
+  font-family: "Tektur";
+  font-size: 18px;
+  font-weight: 500;
+  color: #3E5D93;
+}
+header .header-content .header-cart {
+  display: flex;
+  flex-direction: row;
+}
+header .header-content .header-cart p {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  color: #3E5D93;
+}
+header .header-content .header-cart a {
+  display: block;
+  height: 21px;
+  width: 40px;
+  position: absolute;
+}
+
+.open-menu-container, .open-search-container {
+  display: none;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.main-examples {
+  width: 100%;
+  height: 440px;
+  margin-top: 210px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-examples .main-examples-text {
+  width: 31%;
+}
+.main-examples .main-examples-text .main-examples-header {
+  height: 19px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-examples .main-examples-text .main-examples-header .main-bracket {
+  width: 9px;
+  height: 19px;
+  border: 2px solid #727476;
+  border-right: none;
+  margin-right: 12px;
+}
+.main-examples .main-examples-text .main-examples-header .main-line {
+  width: 100%;
+  height: 0;
+  border-top: 2px solid #3E5D93;
+  margin-right: 20px;
+}
+.main-examples .main-examples-text .main-examples-header p {
+  min-width: 155px;
+  margin-right: 8px;
+  font-family: Tektur;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3E5D93;
+}
+.main-examples .main-examples-text h2 {
+  font-family: Tektur;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 2.16px;
+  color: #727476;
+  margin-top: 20px;
+}
+.main-examples .main-examples-text h2 span {
+  color: #3E5D93;
+}
+.main-examples .main-examples-content {
+  background-image: url("../../img/example.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  width: 68%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.main-examples .main-examples-content .examples-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55px;
+}
+
+.main-form-container {
+  width: 100%;
+  background: var(--secondary-bg-gradient, linear-gradient(92deg, rgba(13, 135, 248, 0.15) 1.39%, rgba(124, 231, 255, 0.25) 45.35%, rgba(143, 201, 254, 0.45) 89.31%));
+  padding: 80px 20px 90px 20px;
+  margin-top: 85px;
+}
+.main-form-container .main-form {
+  margin: 0 auto;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: row;
+}
+.main-form-container .main-form .main-form-header {
+  width: 49%;
+  margin-right: 40px;
+}
+.main-form-container .main-form .main-form-header p {
+  width: 412px;
+  font-family: Tektur;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 2.16px;
+  color: #727476;
+}
+.main-form-container .main-form .main-form-header p span {
+  color: #3E5D93;
+}
+.main-form-container .main-form .main-form-content {
+  width: 49%;
+}
+.main-form-container .main-form .main-form-content .main-form-title {
+  height: 19px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-form-container .main-form .main-form-content .main-form-title .main-bracket {
+  width: 9px;
+  height: 19px;
+  border: 2px solid #727476;
+  border-right: none;
+  margin-right: 12px;
+}
+.main-form-container .main-form .main-form-content .main-form-title p {
+  min-width: 155px;
+  margin-right: 8px;
+  font-family: Tektur;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3E5D93;
+}
+
+.main-form form {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.main-form form input {
+  border-bottom: 1px solid #727476;
+  height: 45px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727476;
+}
+.main-form form > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}
+.main-form form > div input[type=submit] {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3E5D93;
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 5px;
+}
+.main-form form > div .form-arrow {
+  background-color: #FFFFFF;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-form form > div .form-arrow img {
+  width: 10px;
+  height: 10px;
+}
+.main-form form > div p {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  color: #727476;
+  margin-left: 10px;
+}
+.main-form form .submit-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer {
+  margin-top: 80px;
+  background-color: #3E5D93;
+  width: 100%;
+}
+footer .footer-top {
+  width: 100%;
+  height: 150px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+footer .footer-top .footer-bottom-mob {
+  display: none;
+}
+footer .footer-top .footer-menu a {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+footer .footer-top .footer-menu a > :last-of-type {
+  margin-right: 0px;
+}
+footer .footer-top .footer-links {
+  display: flex;
+  flex-direction: row;
+}
+footer .footer-top .footer-links p {
+  font-family: Tektur;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+footer .footer-top .footer-links a {
+  margin-right: 20px;
+}
+footer .footer-top .footer-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 22px;
+  width: 44px;
+  height: 44px;
+}
+footer .footer-top .footer-arrow a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+footer .footer-line {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+footer .footer-line div {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #FFFFFF;
+}
+footer .footer-bottom {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-bottom a, footer .footer-bottom p {
+  font-family: Lato;
+  font-size: 8px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.hidden {
+  display: none;
+}
