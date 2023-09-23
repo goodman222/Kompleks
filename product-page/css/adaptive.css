@@ -8,6 +8,32 @@
   h3 {
     font-size: 45px !important;
   }
+  .product-review {
+    flex-direction: column;
+  }
+  .product-review .product-images {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  .product-info .product-info-menu {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .product-info .product-info-menu p {
+    white-space: nowrap;
+  }
+  .product-info .product-info-equipments {
+    overflow: hidden;
+  }
+  .product-info .product-info-equipments .equipment-item {
+    max-width: 24.2%;
+    min-width: 24.2%;
+  }
+  .product-info .product-info-equipments .equipment-arrow {
+    position: absolute;
+    right: 5px;
+  }
   .footer-menu a {
     font-size: 15px !important;
     margin-right: 15px !important;
@@ -91,6 +117,45 @@
   }
   header .header-menu, header .header-contacts {
     display: none !important;
+  }
+  .product-review {
+    flex-direction: column;
+  }
+  .product-review .product-images {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    grid-template-areas: "E E E" "A B C";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 125px;
+  }
+  .product-review .product-images img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .product-review .product-images .product-images-last {
+    display: none;
+  }
+  .product-options .option-buttons button {
+    font-size: 14px !important;
+  }
+  .product-info .product-info-menu {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .product-info .product-info-menu p {
+    white-space: nowrap;
+  }
+  .product-info .product-info-equipments {
+    overflow: hidden;
+  }
+  .product-info .product-info-equipments .equipment-item {
+    max-width: 49%;
+    min-width: 49%;
+  }
+  .product-info .product-info-equipments .equipment-arrow {
+    position: absolute;
+    right: 5px;
   }
   .main-examples {
     margin-top: 80px;

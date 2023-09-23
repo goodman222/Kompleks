@@ -144,13 +144,14 @@ header {
 
 .product-review {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 
     .product-images {
         width: 55%;
-        max-height: 532px;
+        max-height: 700px;
         display: grid;
         grid-template-areas: 
         "A E"
@@ -687,7 +688,6 @@ header {
 
 
 footer {
-    margin-top: 80px;
     background-color: $darkBlue;
     width: 100%;
 

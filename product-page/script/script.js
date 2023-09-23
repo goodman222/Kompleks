@@ -33,7 +33,7 @@ searchBtn.onclick = function () {
 //Переключение меню на странице продукта
 
 const menuBox = document.querySelector('.product-info-menu')
-let activeSection = 'description'
+let activeSection = 'equipments'
 
 menuBox.onclick = function(event) {
     if (!event.target.dataset.section) {
@@ -57,10 +57,23 @@ const optionsField = document.querySelector('.product-options')
 
 optionsField.onclick = function(event) {
     let item = event.target
-    if (!item.classList.contains('option-item')) {
-        return
-    }
+    let targetSelector
+    
+    if (item.classList.contains('option-item')) {
+        targetSelector = item
+    } else if (item.parentElement.classList.contains('option-item')) {
+        targetSelector = item.parentElement
+    } else if (item.parentElement.parentElement.classList.contains('option-item')) {
+        targetSelector = item.parentElement.parentElement
+    } else {return}
 
-    console.log(item);
+    let selectorsConteiner = targetSelector.parentElement //Контейнер селекторов   
+    let allSelectors = selectorsConteiner.children //Все селекторы в выбранном контейнере
+
+    for (let index = 0; index < (allSelectors.length); index++) {
+        const element = allSelectors[index];
+        element.classList.remove('option-item-active')
+    }
+    targetSelector.classList.add('option-item-active')
 
 }

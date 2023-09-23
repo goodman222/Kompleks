@@ -140,13 +140,14 @@ header .header-content .header-cart a {
 
 .product-review {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 .product-review .product-images {
   width: 55%;
-  max-height: 532px;
+  max-height: 700px;
   display: grid;
   grid-template-areas: "A E" "B E" "C E" "D E";
   grid-template-rows: repeat(4, 1fr);
@@ -592,7 +593,6 @@ header .header-content .header-cart a {
 }
 
 footer {
-  margin-top: 80px;
   background-color: #3E5D93;
   width: 100%;
 }
