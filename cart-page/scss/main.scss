@@ -122,7 +122,143 @@ header {
     overflow: hidden;
 }
 
+.cart-block-container {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 40px;
+    
+    h1 {
+        font-family: Tektur;
+        font-size: 24px;
+        font-weight: 500;
+        color: $darkBlue;
+        margin-bottom: 20px;
+    }
 
+    .cart-item {
+        padding:  20px 32px 20px 12px; 
+        border-radius: 12px;
+        border: 1px solid $lightGrey;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .cart-equipments-container {
+            display: flex;
+            flex-direction: row;
+            
+            img {
+                object-fit: contain;
+            }
+
+            .cart-equipments {
+                align-self: flex-start;
+                margin-left: 20px;
+
+                h2 {
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $darkGrey;
+                }
+
+                p {
+                    font-family: Lato;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $darkGrey;
+                    margin-top: 12px;
+                }
+            }
+        }
+
+        .cart-item-string {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            align-items: center;
+            justify-items: end;
+            width: 55%;
+            
+            
+            .price {
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 400;
+                color: $darkGrey;
+            }
+
+            .amount {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                p {
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $darkBlue;
+                    padding: 0 20px;
+                }
+            }
+
+            .delete {
+                width: 44px;
+                height: 44px;
+                border-radius: 22px;
+                background-color: #F5F7FE;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+        input {
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 400;
+            color: $darkGrey;
+            height: 44px;
+            border-bottom: 1px solid $darkGrey;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            margin-top: 24px;
+            width: 100%;
+
+            button {
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 600;
+                color: $darkBlue;
+                border-radius: 30px;
+                width: 50%;
+                height: 42px;
+                background: var(--secondary-bg-gradient, linear-gradient(92deg, rgba(13, 135, 248, 0.15) 1.39%, rgba(124, 231, 255, 0.25) 45.35%, rgba(143, 201, 254, 0.45) 89.31%));
+            }
+
+            p {
+                font-family: Lato;
+                font-size: 12px;
+                font-weight: 400;
+                color: $darkGrey;
+                margin-left: 20px;
+                align-self: center;
+            }
+        }
+    }
+}
 
 
 
