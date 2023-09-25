@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Breakpoints: 1280px, 960px, 375px*/
 @media (min-width: 960px) and (max-width: 1279px) {
   .main-showcase {
     grid-template-columns: auto 686px;
@@ -34,6 +36,7 @@
   }
 }
 @media (max-width: 960px) {
+  /*Стили для открывающихся меню и поиска*/
   .open-menu-container, .open-search-container {
     display: block;
     width: 100%;
@@ -162,7 +165,7 @@
   }
   .main-tiles .main-tile-pic img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-tiles .main-tile {
     padding: 30px !important;
@@ -376,6 +379,17 @@
   }
   .footer-menu a {
     margin-right: 15px !important;
+  }
+}
+@media (max-width: 960px) {
+  p {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .footer-links > p {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
   }
 }
 @media (max-width: 375px) {

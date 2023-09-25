@@ -157,7 +157,7 @@ header .header-content .header-cart a {
 }
 .product-review .product-images img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -195,12 +195,12 @@ header .header-content .header-cart a {
   font-weight: 500;
   background-image: linear-gradient(180deg, #82C0FA -59.62%, #2EB4DE 20.19%, #5C2EDE 100%);
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .product-review .product-images .product-images-mini .icon-background img {
   width: 70%;
@@ -208,6 +208,9 @@ header .header-content .header-cart a {
   cursor: pointer;
 }
 .product-review .product-images .product-images-full {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  -ms-grid-column: 3;
   grid-area: E;
   height: 100%;
 }

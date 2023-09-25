@@ -1,0 +1,200 @@
+// Breakpoints: 1280px, 960px, 375px
+@import "_variable";
+@media (min-width: 960px) and (max-width: 1279px) {
+    
+    
+    .footer-menu {
+        a {
+            font-size: 15px!important;
+            margin-right: 15px!important;
+        }
+    }
+    
+}
+
+@media (max-width: 960px) {
+
+    //Стили для открывающихся меню и поиска
+    .open-menu-container, .open-search-container {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 100;
+        background-color: $bgColor;
+
+        .open-menu, .open-search {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: 87%;
+            padding: 40px;
+            background-color: $bgColor;
+            position: sticky;
+            z-index: 100;
+
+            .menu-container {
+
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $darkGrey;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-family: Tektur;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $darkBlue;
+                    margin-bottom: 10px;
+                }
+
+                .open-menu-links {
+                    display: flex;
+                    flex-direction: row;
+                    a {
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            .input-container {
+                border-bottom: solid 1px $darkGrey;
+                padding-bottom: 15px;
+                input {
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $darkGrey;
+                }
+            }
+        }
+
+        
+    }
+
+    header {
+
+        .header-buttons {
+            display: flex!important;
+            flex-direction: row;
+            width: 60px;
+            justify-content: space-between;
+            .header-search {
+                display: block!important;
+            }
+
+            .header-menu-button {
+                display: flex!important;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 20px;
+                height: 20px;
+                div {
+                    width: 20px;
+                    height: 0px;
+                    border-bottom: solid 1px $darkBlue;
+                }
+                
+            }
+        }
+        .header-menu, .header-contacts {
+            display: none!important;
+        }
+    }
+
+   
+
+    
+    
+
+    footer {
+        .footer-top {
+            flex-direction: column;
+            height: 240px;
+            margin-bottom: 0;
+
+            .footer-top-string {
+                display: flex;
+                flex-direction: row;
+
+                .footer-bottom {
+                 display: block;
+                }
+            }
+            
+            .footer-links {
+                display: grid;
+                grid-template-areas: "A B C D" 
+                "E E E E";
+                row-gap: 20px;
+
+                p {
+                    grid-area: E;
+                }
+            }
+        
+            > img {
+                margin-top: 20px; 
+            }
+
+            .footer-mob-string {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 10px;
+
+                .footer-bottom-mob {
+                    display: block;
+                    align-self: center;
+
+                    a, p {
+                        font-family: Lato;
+                        font-size: 8px;
+                        font-weight: 400;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+
+            .footer-line-mob {
+                display: block;
+                width: 100%;
+                height: 0px;
+                border-bottom: 1px solid #FFFFFF;
+            }
+
+            .footer-arrow {
+                align-self: flex-end;
+                margin-left: 30px;
+            }
+        }
+
+        .footer-line {
+            display: none;
+        }
+
+        .footer-bottom {
+            display: none;
+        }
+    }
+
+    .footer-menu {
+        a {
+            margin-right: 15px!important;
+        }
+
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .header-logo {
+        display: none;
+    }
+}

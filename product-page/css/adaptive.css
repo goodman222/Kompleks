@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Breakpoints: 1280px, 960px, 375px*/
 @media (min-width: 960px) and (max-width: 1279px) {
   .text-1 h1 {
     font-size: 50px;
@@ -40,6 +42,7 @@
   }
 }
 @media (max-width: 960px) {
+  /*Стили для открывающихся меню и поиска*/
   .open-menu-container, .open-search-container {
     display: block;
     width: 100%;
@@ -131,7 +134,7 @@
   }
   .product-review .product-images img {
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .product-review .product-images .product-images-last {
     display: none;
@@ -259,6 +262,18 @@
   }
   .footer-menu a {
     margin-right: 15px !important;
+  }
+}
+@media (max-width: 960px) {
+  p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .footer-links > p {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
   }
 }
 @media (max-width: 375px) {
