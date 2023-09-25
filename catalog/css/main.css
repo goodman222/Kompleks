@@ -121,9 +121,16 @@ header .header-content .header-cart a {
   overflow: hidden;
 }
 
+.filters-container-mob {
+  display: none;
+}
+
 .catalog-header {
   width: 100%;
   margin-top: 80px;
+}
+.catalog-header .bg-mob {
+  display: none;
 }
 .catalog-header img {
   position: relative;
@@ -172,7 +179,15 @@ header .header-content .header-cart a {
   /* height: 100vh;
   overflow: scroll;*/
 }
-.catalog-content .catalog-filters h1 {
+.catalog-content .catalog-filters .catalog-filters-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.catalog-content .catalog-filters .catalog-filters-header .catalog-filters-close {
+  display: none;
+}
+.catalog-content .catalog-filters .catalog-filters-header h1 {
   font-family: Tektur;
   font-size: 18px;
   font-weight: 500;
@@ -213,6 +228,9 @@ header .header-content .header-cart a {
   justify-content: space-between;
   margin-bottom: 16px;
 }
+.catalog-filters-item .filter-header .filter-rotate {
+  transform: rotate(180deg);
+}
 .catalog-filters-item .filter-header p {
   font-family: Lato;
   font-size: 16px;
@@ -239,6 +257,7 @@ header .header-content .header-cart a {
   font-size: 16px;
   font-weight: 400;
   color: #727476;
+  cursor: default;
 }
 .catalog-filters-item .filter-positions-container .filter-position .filter-color {
   margin-left: 10px;
@@ -294,6 +313,7 @@ header .header-content .header-cart a {
   font-weight: 400;
   color: #727476;
   margin-left: 5px;
+  cursor: default;
 }
 .catalog-showcase-container .catalog-sorting-container .sorting-dropdown {
   position: absolute;
@@ -319,6 +339,7 @@ header .header-content .header-cart a {
   font-weight: 400;
   color: #727476;
   margin-left: 8px;
+  cursor: default;
 }
 .catalog-showcase-container .catalog-sorting-container .sorting-dropdown .sorting-dropdown-item .sorting-mark {
   width: 21px;

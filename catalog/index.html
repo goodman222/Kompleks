@@ -94,7 +94,8 @@
         
         <div class="catalog-header">
             <h1>Каталог <span>продукции</span></h1>
-            <img src="../img/catalog-bg.png" alt="">
+            <img class="bg-desktop" src="../img/catalog-bg.png" alt="">
+            <img class="bg-mob" src="../img/catalog-bg-mob.png" alt="">
         </div>
 
         <div class="catalog-tabs">
@@ -102,11 +103,32 @@
             <a href="">Стенды</a>
             <a class="" href="">СИЗы</a>
         </div>
+    </div>
 
+    <div class="filters-container-mob">
+        <div class="sorting-btn-mob">
+            <img src="../img/sorting-arrows.svg" alt="">
+            <p>По популярности</p>
+        </div>
+        <div class="filter-btn-mob">
+            <img src="../img/filter-button.svg" alt="">
+            <p>Фильтры</p>
+        </div>
+    </div>
+
+    <div class="content-container">
         <div class="catalog-content">
-            <div class="catalog-filters">
-                <h1>Фильтры</h1>
+            <!-- "catalog-filters-open" - класс для открытися фильтров -->
+            <div class="catalog-filters"> 
                 
+                <div class="catalog-filters-header">
+                    <h1>Фильтры</h1>
+                    <div class="catalog-filters-close">
+                        <div>
+                            <img src="../img/close.svg" alt="">
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="catalog-filters-item">
                     <div class="filter-header">
@@ -536,9 +558,8 @@
 
             </div>
         </div>
-        
-    </div>
-
+    </div>    
+    
     <footer>
         <div class="footer-top">
             <img src="../img/footer-logo.png" alt="">
